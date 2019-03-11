@@ -41,7 +41,9 @@ if(this.el.object3D.visible == true){
   </div>
   <a-scene embedded artoolkit='sourceType: webcam; detectionMode: mono; maxDetectionRate: 30; canvasWidth: 240; canvasHeight: 180' >
     <a-assets>
-      <video id="vid" src="/ar/assets/ct.ogv" loop="true" crossorigin>
+      <video id="vid" loop="true" crossorigin>
+	      <source src="assets/ct.ogv" type='video/ogg; codecs="theora, vorbis"'>
+      </video>
     </a-assets>
    
     <a-marker id="memarker" preset="hiro" vidhandler>
